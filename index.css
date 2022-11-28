@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Poppins";
+}
+
+body {
+	background-color: #051923;
+	color: #b6cbce;
+	font-family: Poppins, sans-serif;
+}
+
+h1,h3,h4,h5,h6 {
+    color: #eef3db;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #b6cbce;
+    transition: all 0.4s ease;
+}
+
+/*a:hover {
+    color: #e0f780;
+}*/
+
+
+.text-brand {
+    color: #e0f780;
+}
+
+.bg-base {
+    background-color: #033f47;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: #e0f780;
+    color: #033f47;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #033f47;
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #022a30;
+}
+
+.navbar .nav-link.active {
+    color: #e0f780;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: 240px;
+        background: url(https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid #e0f780;
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: 240px;
+    }
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+    background-color: #033f47;
+    border-color: #033f47;
+    color: #b6cbce;
+}
+
+#contact .form-control:focus {
+    border-color: #e0f780;
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: #b6cbce;
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+.social-icons a {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    font-size: 30px;
+}
